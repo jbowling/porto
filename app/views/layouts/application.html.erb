@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Porto</title>
+  <title>Jess Bowling</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<nav>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li>
+			<a href="products.html">About<span class="caret"></span></a>
+			<div>
+				<ul>
+					<li><a href="products.html#chair">Bio</a></li>
+					<li><a href="products.html#table">Resume</a></li>
+					<li><a href="cooker.html">CV</a></li>
+				</ul>
+			</div>
+		</li>
+		<li><a href="about.html">Video</a></li>
+		<li><a href="help.html">Web Dev</a></li>
+		<li><a href="help.html">Contact</a></li>
+
+	</ul>
+</nav>
 
 <%= yield %>
 
